@@ -35,3 +35,6 @@ export NVM_DIR="${HOME}/.nvm"
 nvm use default
 
 . ~/.yarn-completion
+
+# LV2 plugins path for Audacity
+export LV2_PATH=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2

@@ -116,22 +116,22 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# export PATH=$PATH:/home/evenfrost/.node/bin
+# export PATH=$PATH:/home/$USER/.node/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 export MONGO_URL=mongodb://localhost:27017/sw
 eval "$(rbenv init -)"
 
-export NVM_DIR="/home/evenfrost/.nvm"
+export NVM_DIR="/home/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export ANSIBLE_HOSTS="/home/evenfrost/Dropbox/.config/ansible/ansible_hosts"
-[[ -s "/home/evenfrost/.gvm/scripts/gvm" ]] && source "/home/evenfrost/.gvm/scripts/gvm"
+export ANSIBLE_HOSTS="/home/$USER/Dropbox/.config/ansible/ansible_hosts"
+[[ -s "/home/$USER/.gvm/scripts/gvm" ]] && source "/home/$USER/.gvm/scripts/gvm"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH="/home/evenfrost/.linuxbrew/bin:$PATH"
+export PATH="/home/$USER/.linuxbrew/bin:$PATH"
 
-export ANSIBLE_CONFIG="/home/evenfrost/Dropbox/.config/ansible/ansible.cfg"
+export ANSIBLE_CONFIG="/home/$USER/Dropbox/.config/ansible/ansible.cfg"
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 

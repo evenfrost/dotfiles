@@ -1,0 +1,24 @@
+[alias]
+  prune = fetch --prune
+  undo = reset --soft HEAD^
+  stash-all = stash save --include-untracked
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[color]
+	ui = true
+[user]
+	email = evenfrosty@gmail.com
+	name = evenfrost
+[push]
+	default = simple
+  followTags = true
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
+[merge]
+	tool = sublime
+[pull]
+	rebase = true
+[mergetool]
+	keepBackup = false
+[status]
+  showUntrackedFiles = all

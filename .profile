@@ -38,3 +38,6 @@ nvm use default
 
 # LV2 plugins path for Audacity
 export LV2_PATH=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2
+
+# local bin folder
+export PATH="$HOME/.local/bin:$PATH"

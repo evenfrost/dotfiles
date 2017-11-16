@@ -84,9 +84,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -116,31 +113,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# export PATH=$PATH:/home/$USER/.node/bin
-export PATH="$HOME/.rbenv/bin:$PATH"
-export MONGO_URL=mongodb://localhost:27017/sw
-eval "$(rbenv init -)"
-
-export NVM_DIR="/home/$USER/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export ANSIBLE_HOSTS="/home/$USER/Dropbox/.config/ansible/ansible_hosts"
 [[ -s "/home/$USER/.gvm/scripts/gvm" ]] && source "/home/$USER/.gvm/scripts/gvm"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export PATH="/home/$USER/.linuxbrew/bin:$PATH"
-
-export ANSIBLE_CONFIG="/home/$USER/Dropbox/.config/ansible/ansible.cfg"
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
 # alias hub with git
 eval "$(hub alias -s)"
-
-# Go local config
-export GOPATH="$HOME/.go/"
-export PATH="$HOME/.go/bin:$PATH"
 
 # update Node version with nvm
 function nvmu() {

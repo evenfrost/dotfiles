@@ -30,14 +30,33 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# export PATH=$PATH:/home/$USER/.node/bin
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/home/$USER/.linuxbrew/bin:$PATH"
+
+# Go local config
+export GOPATH="$HOME/.go/"
+export PATH="$HOME/.go/bin:$PATH"
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+export ANSIBLE_CONFIG="$HOME/Dropbox/.config/ansible/ansible.cfg"
+export ANSIBLE_HOSTS="$HOME/Dropbox/.config/ansible/ansible_hosts"
+
 export NVM_DIR="${HOME}/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 nvm use default
+
+eval "$(rbenv init -)"
 
 . ~/.yarn-completion
 
 # LV2 plugins path for Audacity
 export LV2_PATH=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2
-
-# local bin folder
-export PATH="$HOME/.local/bin:$PATH"

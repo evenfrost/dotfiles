@@ -50,6 +50,9 @@ export ANSIBLE_HOSTS="$HOME/Dropbox/.config/ansible/ansible_hosts"
 
 export NVM_DIR="${HOME}/.nvm"
 
+# Homebrew
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 nvm use default

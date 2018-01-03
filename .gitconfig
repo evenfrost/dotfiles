@@ -8,14 +8,20 @@
 [user]
 	email = evenfrosty@gmail.com
 	name = evenfrost
+[core]
+	editor = code --wait
 [push]
 	default = simple
   followTags = true
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOT
+[merge]
+	tool = sublime
 [mergetool "sublime"]
 	cmd = subl -w $MERGED
 	trustExitCode = false
-[merge]
-	tool = sublime
 [pull]
 	rebase = true
 [mergetool]

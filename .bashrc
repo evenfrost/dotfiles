@@ -117,9 +117,6 @@ fi
 
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 
-# alias hub with git
-eval "$(hub alias -s)"
-
 # update Node version with nvm
 function nvmu() {
   nvm install $1 --reinstall-packages-from=`nvm version`

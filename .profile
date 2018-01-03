@@ -59,6 +59,9 @@ nvm use default
 
 eval "$(rbenv init -)"
 
+# alias hub with git
+eval "$(hub alias -s)"
+
 . ~/.yarn-completion
 
 # LV2 plugins path for Audacity

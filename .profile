@@ -68,3 +68,6 @@ eval "$(hub alias -s)"
 export LV2_PATH=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Rust's Cargo
+export PATH="$HOME/.cargo/bin:$PATH"

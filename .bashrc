@@ -194,3 +194,5 @@ alias dcup='docker-compose up -d'
 . /etc/profile.d/vte.sh
 
 eval $(thefuck --alias)
+
+alias code='code -r'

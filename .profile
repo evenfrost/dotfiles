@@ -36,7 +36,9 @@ export PATH="$HOME/.gem/ruby/2.3.0/bin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
 export PATH="/home/$USER/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 # Go local config
 export GOPATH="$HOME/.go/"
@@ -61,8 +63,6 @@ eval "$(rbenv init -)"
 
 # alias hub with git
 eval "$(hub alias -s)"
-
-. ~/.yarn-completion
 
 # LV2 plugins path for Audacity
 export LV2_PATH=$HOME/.lv2:/usr/local/lib/lv2:/usr/lib/lv2

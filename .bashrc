@@ -191,7 +191,7 @@ fi
 alias dcup='docker-compose up -d'
 
 # fix for Ubuntu terminal not preserving cwd on new tab
-. /etc/profile.d/vte.sh
+# . /etc/profile.d/vte.sh
 
 eval $(thefuck --alias)
 

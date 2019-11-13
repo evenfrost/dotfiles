@@ -199,3 +199,14 @@ alias code='code -r'
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+alias git=hub
+
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
+# update Node version with nvm
+function nvmu() {
+  nvm install $1 --reinstall-packages-from=`nvm version`
+  nvm use $1
+  nvm alias default $1
+}
